@@ -1,0 +1,15 @@
+SOURCE += usertwoPhaseMixture/usertwoPhaseMixture.C
+
+SOURCE += interfaceCompression/interfaceCompression.C
+SOURCE += noInterfaceCompression/noInterfaceCompression.C
+
+SOURCE += MPLIC/MPLICface.C
+SOURCE += MPLIC/MPLICcellStorage.C
+SOURCE += MPLIC/MPLICcell.C
+SOURCE += MPLIC/MPLIC.C
+SOURCE += MPLIC/MPLICU.C
+
+SOURCE += PLIC/PLIC.C
+SOURCE += PLIC/PLICU.C
+
+LIB = $(FOAM_USER_LIBBIN)/libusertwoPhaseMixture
