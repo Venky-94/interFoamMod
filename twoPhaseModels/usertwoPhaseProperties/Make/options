@@ -1,0 +1,9 @@
+EXE_INC = \
+    -I../usertwoPhaseMixture/lnInclude \
+    -I../userinterfaceProperties/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude
+
+LIB_LIBS = \
+    -L$(FOAM_USER_LIBBIN) -lusertwoPhaseMixture \
+    -L$(FOAM_USER_LIBBIN) -luserinterfaceProperties \
+    -lfiniteVolume

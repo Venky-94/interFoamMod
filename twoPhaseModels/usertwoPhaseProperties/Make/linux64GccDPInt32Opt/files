@@ -1,0 +1,8 @@
+SOURCE += alphaContactAngle/alphaContactAngle/alphaContactAngleFvPatchScalarField.C
+SOURCE += alphaContactAngle/constantAlphaContactAngle/constantAlphaContactAngleFvPatchScalarField.C
+SOURCE += alphaContactAngle/temperatureDependentAlphaContactAngle/temperatureDependentAlphaContactAngleFvPatchScalarField.C
+SOURCE += alphaContactAngle/dynamicAlphaContactAngle/dynamicAlphaContactAngleFvPatchScalarField.C
+SOURCE += alphaContactAngle/timeVaryingAlphaContactAngle/timeVaryingAlphaContactAngleFvPatchScalarField.C
+SOURCE += useralphaFixedPressure/useralphaFixedPressureFvPatchScalarField.C
+
+LIB = $(FOAM_USER_LIBBIN)/libusertwoPhaseProperties
