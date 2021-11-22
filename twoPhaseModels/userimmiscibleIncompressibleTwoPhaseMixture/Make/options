@@ -1,0 +1,15 @@
+EXE_INC = \
+    -I$(LIB_SRC)/transportModels/lnInclude \
+    -I../userincompressibleTwoPhaseMixture/lnInclude \
+    -I../usertwoPhaseMixture/lnInclude \
+    -I../userinterfaceProperties/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude
+
+LIB_LIBS = \
+    -L$(FOAM_USER_LIBBIN) -luserincompressibleTwoPhaseMixture \
+    -L$(FOAM_USER_LIBBIN) -lusertwoPhaseMixture \
+    -ltransportModels \
+    -L$(FOAM_USER_LIBBIN) -luserinterfaceProperties \
+    -L$(FOAM_USER_LIBBIN) -lusertwoPhaseProperties \
+    -lfiniteVolume
+	

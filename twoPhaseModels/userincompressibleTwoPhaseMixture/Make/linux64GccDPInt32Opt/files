@@ -1,0 +1,3 @@
+SOURCE += userincompressibleTwoPhaseMixture.C
+
+LIB = $(FOAM_USER_LIBBIN)/libuserincompressibleTwoPhaseMixture

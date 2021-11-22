@@ -1,0 +1,8 @@
+SOURCE += userinterfaceProperties.C
+
+SOURCE += surfaceTensionModels/surfaceTensionModel/surfaceTensionModel.C
+SOURCE += surfaceTensionModels/surfaceTensionModel/surfaceTensionModelNew.C
+SOURCE += surfaceTensionModels/constant/constantSurfaceTension.C
+SOURCE += surfaceTensionModels/temperatureDependent/temperatureDependentSurfaceTension.C
+
+LIB = $(FOAM_USER_LIBBIN)/libuserinterfaceProperties

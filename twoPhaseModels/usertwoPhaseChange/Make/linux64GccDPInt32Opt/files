@@ -1,0 +1,5 @@
+SOURCE += usertwoPhaseChangeModel/usertwoPhaseChangeModel.C
+SOURCE += usertwoPhaseChangeModel/usertwoPhaseChangeModelNew.C
+SOURCE += usernoPhaseChange/usernoPhaseChange.C
+
+LIB = $(FOAM_USER_LIBBIN)/libusertwoPhaseChangeModels
