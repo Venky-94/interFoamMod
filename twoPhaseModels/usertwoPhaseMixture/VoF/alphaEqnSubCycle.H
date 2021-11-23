@@ -40,10 +40,4 @@ else
 
 //rho == alpha1*rho1 + alpha2*rho2;
 
-const volScalarField limitedAlpha1
-    (
-        "limitedAlpha1",
-        min(max(alpha1, scalar(0)), scalar(1))
-    );
-
 rho == (rho2 + (rho1 - rho2)*pow(limitedAlpha1, 1.5*(nuModel1/nuModel2) + 0.75));
