@@ -134,7 +134,7 @@ Foam::userincompressibleTwoPhaseMixture::mu() const
     (
         "mu",
 		rho2_*nuModel2_->nu() + (rho1_*nuModel1_->nu() - rho2_*nuModel2_->nu())*pow(limitedAlpha1, 1.5*(nuModel1_->nu()/nuModel2_->nu()) + 0.75)
-        /*limitedAlpha1*rho1_*nuModel1_->nu() + (scalar(1) - limitedAlpha1)*rho2_*nuModel2_->nu()*/
+        //limitedAlpha1*rho1_*nuModel1_->nu() + (scalar(1) - limitedAlpha1)*rho2_*nuModel2_->nu()
     );
 }
 
