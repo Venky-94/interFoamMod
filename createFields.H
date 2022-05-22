@@ -43,8 +43,8 @@ volScalarField& alpha2(mixture.alpha2());
 
 const dimensionedScalar& rho1 = mixture.rho1();
 const dimensionedScalar& rho2 = mixture.rho2();
-const volScalarField& nuModel1 = mixture.nuM1();
-const volScalarField& nuModel2 = mixture.nuM2();
+const volScalarField& nuMod1 = mixture.nuM1();
+const volScalarField& nuMod2 = mixture.nuM2();
 
 const volScalarField limAlpha1
     (
@@ -63,7 +63,7 @@ volScalarField rho
         IOobject::READ_IF_PRESENT,
 		IOobject::AUTO_WRITE
     ),
-	rho2 + (rho1 - rho2)*pow(limAlpha1, 1.5*(nuModel1/nuModel2) + 0.75)
+	rho2 + (rho1 - rho2)*pow(limAlpha1, 1.5*(nuMod1/nuMod2) + 0.75)
 	//alpha1*rho1 + alpha2*rho2
 );
 rho.oldTime();
