@@ -40,4 +40,4 @@ else
 
 //rho == alpha1*rho1 + alpha2*rho2;
 
-rho == (rho2 + (rho1 - rho2)*pow(limitedAlpha1, 1.5*(nuModel1/nuModel2) + 0.75));
+rho == (rho2 + (rho1 - rho2)*pow(limitedAlpha1, 1.5*(nuMod1/nuMod2) + 0.75));
